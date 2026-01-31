@@ -4,7 +4,9 @@ const HyperDB = {
             'cdn.helper.json',
             'random.char.gen.js',
             'methods.js',
-            'project.manager.js'
+            'project.manager.js',
+            'hyper.key.js',
+            'key.gen.js'
         ];
 
         for (const file of scripts) {
@@ -18,7 +20,9 @@ const HyperDB = {
         
         this.methods = hyperMethod;
         this.random = hyperRandom;
-        this.project = hyperProject;
+        this.project = hyperChain;
+        this.keyManager = hyperKeyManager;
+        this.keyGen = hyperKey;
         
         this.methods.config.url = this.config.settings.api_url;
         this.methods.config.activeRepo = this.config.active_repo;

@@ -7,7 +7,6 @@ const hyperRandom = {
     }
     return result;
   },
-
   createRepoName(projectName) {
     const suffix = this.generate(5);
     return `HyperStorageDB-${projectName}-${suffix}`;
