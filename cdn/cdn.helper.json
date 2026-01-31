@@ -1,0 +1,10 @@
+{
+  "project_name": "",
+  "active_repo": "",
+  "nodes": [],
+  "settings": {
+    "api_url": "https://hyperstoragedb.vercel.app",
+    "suffix_length": 5,
+    "limit_per_node": "3GB"
+  }
+}
