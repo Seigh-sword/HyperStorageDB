@@ -17,8 +17,8 @@ HEADERS = {
 @app.route('/', methods=['GET'])
 def home():
     return jsonify({
-        "status": "HyperStorageDB Online", 
-        "info": "Infinite Storage Engine Active",
+        "status": "HyperStorageDB Online.", 
+        "info": "Running engine.",
         "target_org": ORG
     })
 
