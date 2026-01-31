@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 TOKEN = os.environ.get("GITHUB_TOKEN")
-ORG = os.environ.get("ORG_NAME")
+ORG = "HyperStorageDB"
 HEADERS = {
     "Authorization": f"token {TOKEN}",
     "Accept": "application/vnd.github.v3+json"
@@ -16,7 +16,11 @@ HEADERS = {
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({"status": "HyperStorageDB Online", "org": ORG})
+    return jsonify({
+        "status": "HyperStorageDB Online", 
+        "info": "Infinite Storage Engine Active",
+        "target_org": ORG
+    })
 
 @app.route('/hyper-save', methods=['POST'])
 def save():
